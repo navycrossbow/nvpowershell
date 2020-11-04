@@ -3,7 +3,7 @@
 Import-Module MicrosoftTeams
 
 
-$config = (Import-PowerShellDataFile "C:\dev\config.psd1")
+$config = (Import-PowerShellDataFile "C:\dev\config\config.psd1")
 $tenantId = $config.TenantId
 
 Connect-MicrosoftTeams  -TenantId $tenantId
